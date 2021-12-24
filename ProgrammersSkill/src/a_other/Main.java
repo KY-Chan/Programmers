@@ -43,7 +43,7 @@ public class Main {
 		Map<String, EtcDTO> etcMap4 = etcEntity.getEtcListByName("n1")
 				.stream()
 				.distinct()
-				.collect(Collectors.toMap(EtcDTO::getId, x -> x));
+				.collect(Collectors.toMap(x-> x.getId(), x -> x));
 		System.out.println("4. getEtcListByName.stream.distinct.collect %2");
 		System.out.println(etcMap4);
 		System.out.println("------------------------------");
