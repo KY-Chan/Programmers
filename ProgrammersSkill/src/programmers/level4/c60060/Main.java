@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 public class Main {
 	public static void main(String[] args) {
-		Solution sol = new Solution();
+		Solution2 sol = new Solution2();
 		String[] words = {"frodo", "front", "frost", "frozen", "frame", "kakao"};
-		String[] queries = {"?????"};
+		String[] queries = {"pro?"};
 		System.out.println(Arrays.toString(sol.solution(words, queries)));
 	}
 	
